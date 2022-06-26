@@ -2,7 +2,7 @@
 def yes_no (question):
     valid = False
     while not valid:
-        response = input(question).lower()
+        response = input("Have you played before?").lower()
 
         if response == "Yes"or response == "y":
             return "Yes"

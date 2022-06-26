@@ -48,3 +48,14 @@ print
 if played_before ==  "no":
     instructions
 print()
+
+
+# Quick calculations (stats)
+rounds_won = rounds_played - rounds_lost
+
+# End of game statements
+print()
+print('^^^^ End Game Summary ^^^^')
+print("Won: {} \t|\t Lost: {} \t|\t" .format(rounds_won, rounds_lost))
+print()
+print("Thanks For Playing")
