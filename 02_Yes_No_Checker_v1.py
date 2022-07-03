@@ -4,10 +4,10 @@ def yes_no (question):
     while not valid:
         response = input("Have you played before?").lower()
 
-        if response == "Yes"or response == "y":
-            return "Yes"
-        elif response == "No" or response =="n":
-            return "No"
+        if response == "yes"or response == "y":
+            return "yes"
+        elif response == "no" or response =="n":
+            return "no"
 
         else: 
             print("Please answer Yes / No")
@@ -19,3 +19,8 @@ def instructions ():
     print()
     
     return""
+
+
+for item in range(0,6):
+    ask = yes_no("Do you want instructions?")
+    print("You chose", ask)
