@@ -3,7 +3,7 @@
 
 def check_rounds():
     while True:
-        response = input("How many rounds:")
+        response = input("How many rounds: ")
 
         round_error = "Please type either <Enter> " \
                     "or an integer that is more than 0"
@@ -14,16 +14,15 @@ def check_rounds():
                 if response <1:
                     print(round_error)
                     continue
+           
             except ValueError:
                 print(round_error)
                 continue
 
-
-                
-    return response
+        return response
 
         
-Rounds_played = 0
+rounds_played = 0
 choose_instruction = "Please answer the question"
 
 # Ask user for number of rounds, or <enter> for infinate
@@ -36,20 +35,16 @@ while end_game == "no":
     print()
     if rounds == "":
         heading = "Continuous Mode: Round {}".format(rounds_played +1)
-        print(heading)
-    print(heading)
-    choose = input("{} or 'xxx' to end:".format(choose_instruction))
+    else:
+        heading = input("{} or 'xxx' to end:".format(choose_instruction))
+   
     if choose == 'xxx':
         break
     else:
         heading = "round {} of {}".format(rounds_played + 1, rounds)
+      
         print(heading)
-        choose = input(choose_instruction)
-        if Rounds_played == rounds - 1:
+        choose = input("{} or 'xxx' to end: ".format(choose_instruction))
+        if rounds_played == rounds - 1:
             end_game = "yes"
-
-
-    print("You chose {}".format(choose))
-
-    Rounds_played += 1
 
