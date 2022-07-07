@@ -1,5 +1,13 @@
 {
   "files": {
+    ".replit": [
+      {
+        "id": "750d260c-268c-4d9b-b405-169c835b092d",
+        "line": 2,
+        "version": 25,
+        "index": 21
+      }
+    ],
     "02_Yes_No_Checker_.py": [
       {
         "id": "cf704614-9b74-4124-8306-5cb95f51735f",

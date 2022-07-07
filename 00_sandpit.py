@@ -1,7 +1,9 @@
-name = ""
-while name.lower() != "xxx":
-    name = input ("10 x 5 = ")
-    print (name)
+fruit_list = []
+
+for item in range (0, 4):
+    fruit = input("Fruit: ")
+    fruit_list.append(fruit)
 
 print()
-print ("we are done!")
+print(" The Fruit List")
+print(fruit_list)
