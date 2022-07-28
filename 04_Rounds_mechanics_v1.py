@@ -1,4 +1,4 @@
-# Round numbers for each individual equation
+# Round numbers for each individual equations
 
 
 def check_rounds():
@@ -35,16 +35,18 @@ while end_game == "no":
     print()
     if rounds == "":
         heading = "Continuous Mode: Round {}".format(rounds_played +1)
-    print(heading) 
-    choose = input("{} or 'xxx' to end:".format(choose_instruction))
-    if choose == 'xxx':
-       break
+        print(heading) 
+        choose = input("{} or 'xxx' to end:".format(choose_instruction))
+
     else:
-        heading = "round {} of {}".format(rounds_played + 1, rounds)
+        heading = "Round {} of {}".format(rounds_played + 1, rounds)
         print(heading)
         choose = input(choose_instruction)
         if rounds_played == rounds - 1:
             end_game = "yes"
+
+    if choose == 'xxx':
+       break
 
 print("You chose {}".format(choose))
 

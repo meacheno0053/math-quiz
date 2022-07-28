@@ -1,19 +1,33 @@
 {
   "files": {
-    ".replit": [
-      {
-        "id": "750d260c-268c-4d9b-b405-169c835b092d",
-        "line": 2,
-        "version": 29,
-        "index": 21
-      }
-    ],
     "02_Yes_No_Checker_.py": [
       {
         "id": "cf704614-9b74-4124-8306-5cb95f51735f",
         "line": 5,
         "version": 443,
         "index": 104
+      }
+    ],
+    "02_Yes_No_Checker_v1.py": [
+      {
+        "id": "9eb6f834-c23e-4529-aaa7-a7edff65f67c",
+        "line": 5,
+        "version": 5,
+        "index": 104
+      }
+    ],
+    "04_Rounds_mechanics_v2.py": [
+      {
+        "id": "f480daf0-4a6a-4d0f-afdf-aedabc0f5cb6",
+        "line": 33,
+        "version": 17,
+        "index": 664
+      },
+      {
+        "id": "3e5efc32-599f-42ed-ac78-f38657823e4e",
+        "line": 50,
+        "version": 17,
+        "index": 970
       }
     ]
   }
