@@ -15,20 +15,6 @@
         "version": 5,
         "index": 104
       }
-    ],
-    "04_Rounds_mechanics_v2.py": [
-      {
-        "id": "f480daf0-4a6a-4d0f-afdf-aedabc0f5cb6",
-        "line": 33,
-        "version": 17,
-        "index": 664
-      },
-      {
-        "id": "3e5efc32-599f-42ed-ac78-f38657823e4e",
-        "line": 50,
-        "version": 17,
-        "index": 970
-      }
     ]
   }
 }

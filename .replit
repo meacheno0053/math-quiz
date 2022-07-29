@@ -1,2 +1,2 @@
 language = "python3"
-run = "python 04_Rounds_mechanics_v2.py"
+run = "python 11_max_guesses.py"
