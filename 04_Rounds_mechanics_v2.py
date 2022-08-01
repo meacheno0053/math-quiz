@@ -46,6 +46,9 @@ while end_game =="no":
 
   
   print(heading)
+
+
+    
   choose = input("{} or 'xxx' to end: ".format(choose_instruction))
     
   # End game if exit code is typed
@@ -62,5 +65,7 @@ while end_game =="no":
     break
 
 # Put end game content here
+
+
 print()
 print("Thank you for playing")
