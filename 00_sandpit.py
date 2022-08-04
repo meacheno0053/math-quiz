@@ -1,12 +1,11 @@
-# Main routine is more efficient that v1
-
+import random
 
 def check_rounds():
   while True:
     response = input ("How many rounds? : ")
     
     round_error = "Please type either <Enter>, xxx " \
-    "or an integer that is more than 0"
+    "or an integer more than 0"
     if response != "":
         try:
             response = int(response)
@@ -25,7 +24,6 @@ def check_rounds():
 # Main routine goes here...
 
 rounds_played = 0 
-choose_instruction = "< INSERT ANSWER HERE >"
 
 # Ask user for # of rounds, <enter> for infinate mode
 
@@ -44,16 +42,7 @@ while end_game =="no":
   else:
     heading = "Round {} of {}".format(rounds_played + 1, rounds)    
 
-  
-  print(heading)
-  choose = input("{} or 'xxx' to end: ".format(choose_instruction))
-    
-  # End game if exit code is typed
-  if choose == "xxx":
-    break
-
   # **** rest of loop / game ****
-import random
 
 first = random.randint(1, 100)
 second = random.randint(1, 100)
@@ -64,7 +53,7 @@ print(question)
 
 run = True
 while run :
-    user_input = int(input("Enter number: "))
+    user_input = int(input("Your answer: "))
     if user_input == answer:
         print("correct!")
         print("Program continues")
@@ -76,6 +65,9 @@ while run :
 
   # end game if requested # of rounds has been played
     if rounds_played == rounds:
+        break
+
+    if user_input == "xxx":
         break
 
 # Put end game content here
