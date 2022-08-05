@@ -46,16 +46,43 @@ print()
 played_before = yes_no("?? Have You Played Before ?? ")
 print
 if played_before ==  "no":
-    instructions
+    display = instructions()
 print()
 
+def check_rounds():
+  while True:
+    response = input ("How many rounds? : ")
+    
+    round_error = "Please type either <Enter>, xxx " \
+    "or an integer that is more than 0"
+    if response != "":
+        try:
+            response = int(response)
+            
+            if response <1:
+                print (round_error)
+                continue
+            
+        except ValueError:
+            print(round_error)
+            continue
+    
+    return response
 
-# Quick calculations (stats)
-rounds_won = rounds_played - rounds_lost
 
-# End of game statements
-print()
-print('^^^^ End Game Summary ^^^^')
-print("Won: {} \t|\t Lost: {} \t|\t" .format(rounds_won, rounds_lost))
-print()
-print("Thanks For Playing")
+first = random.randint(1, 100)
+second = random.randint(1, 100)
+answer = first + second
+
+question = "{} + {} = ".format(first, second)
+print(question)
+
+run = True
+while run :
+    user_input = int(input("Enter number: "))
+    if user_input == answer:
+        print("correct!")
+        print("Program continues")
+        run = False
+    elif user_input < answer:
+        print("Incorrect! The correct answer is:", answer)

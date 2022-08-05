@@ -23,6 +23,6 @@ def instructions ():
 played_before = yes_no ("Have you played before")
 
 if played_before == "no":
-    print()
+    print(instructions)
 
 print("program continues")
