@@ -39,7 +39,6 @@ while end_game =="no":
 
     # Start of game play loop
     
-    
     # Rounds Heading
     print()
     if rounds =="":
@@ -50,10 +49,7 @@ while end_game =="no":
     print(heading)
 
 
-
     # End game if exit code is typed
-
-
 
     first = random.randint(1, 100)
     second = random.randint(1, 100)
@@ -68,8 +64,6 @@ while end_game =="no":
         if user_input == answer:
             print("correct!")
             run = False
-        if user_input == exit_code:
-            break
         elif user_input < answer:
             print("Incorrect! The correct answer is:", answer)
             if user_input < answer:

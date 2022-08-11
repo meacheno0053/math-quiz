@@ -30,9 +30,16 @@ def intcheck(question, low=None, high=None, exit_code = "xxx"):
             if low is not None and response < low:
                 print(error)
                 continue
+
+            else:
+                return response
+
+        except ValueError:
+            print("Please enter an integer")
+            continue
 # Main routine goes here...
 
-            rounds_played = 0 
+rounds_played = 0 
 
 # Ask user for # of rounds, <enter> for infinate mode
 
@@ -62,25 +69,25 @@ while end_game =="no":
     question = "{} + {} = ".format(first, second)
     print(question)
     
-    run = True
-    while run :
-        user_input = int(input("Your answer: "))
-        if user_input == answer:
-            print("correct!")
-            run = False
-        elif user_input < answer:
-            print("Incorrect! The correct answer is:", answer)
-            if user_input < answer:
-             break
+
+    user_input = intcheck("Your answer: ", 1, exit_code = "xxx")
+
+    if user_input == "xxx":
+        break
+    if user_input == answer:
+        print("correct!")
+        run = False
+    elif user_input < answer:
+        print("Incorrect! The correct answer is:", answer)
+        if user_input < answer:
+            break
     
     rounds_played += 1
     
     # end game if requested # of rounds has been played
     if rounds_played == rounds:
         break
-    
-    if user_input == "xxx":
-        break
+
 
 # Put end game content here
 print()
