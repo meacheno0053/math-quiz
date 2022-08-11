@@ -79,8 +79,7 @@ while end_game =="no":
         run = False
     elif user_input < answer:
         print("Incorrect! The correct answer is:", answer)
-        if user_input < answer:
-            break
+
     
     rounds_played += 1
     
