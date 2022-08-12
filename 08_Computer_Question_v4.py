@@ -66,7 +66,7 @@ while end_game =="no":
     second = random.randint(1, 100)
     answer = first + second
 
-    question = "{} + {} = ".format(first, second)
+    question = "{} + {} = ?".format(first, second)
     print(question)
     
 
@@ -77,9 +77,8 @@ while end_game =="no":
     if user_input == answer:
         print("correct!")
         run = False
-    elif user_input < answer:
+    else:
         print("Incorrect! The correct answer is:", answer)
-
     
     rounds_played += 1
     
