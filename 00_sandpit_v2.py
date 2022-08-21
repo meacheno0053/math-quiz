@@ -87,7 +87,7 @@ while end_game =="no":
     # end game if requested # of rounds has been played
     if rounds_played == rounds:
         break
-rounds_won = rounds_played - rounds_lost
+rounds_won = rounds_played - rounds_won - rounds_lost
     
 print()
 print('^^^^ End Game Summary ^^^^')
