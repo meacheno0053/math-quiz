@@ -10,7 +10,7 @@ def yes_no(question):
         if response == "yes" or response == "y":
             return "yes"
         elif response == "no" or response == "n":
-            return "No"
+            return "no"
 
         else:
             print("Please answer Yes / No")
@@ -165,8 +165,9 @@ while end_game == "no":
     if user_input == answer:
         print("correct!")
         run = False
-    elif user_input < answer:
+    else:
         print("Incorrect! The correct answer is:", answer)
+        rounds_lost += 1
 
     rounds_played += 1
 
@@ -177,8 +178,8 @@ while end_game == "no":
 rounds_won = rounds_played -rounds_lost
 
 print()
-print('^^^^ End Game Summary ^^^^')
+print('^^^^ End of Quiz Summary ^^^^')
 print("Won: {} \t|\t Lost: {} \t|\t Played: {}".format(rounds_won, rounds_lost,
                                                        rounds_played))
 print()
-print("Thanks For Playing")
+print("Thanks For Playing :) ")
